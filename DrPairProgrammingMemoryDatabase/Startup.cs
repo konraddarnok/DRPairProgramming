@@ -23,6 +23,7 @@ namespace DrPairProgrammingMemoryDatabase
         }
 
         public IConfiguration Configuration { get; }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -30,6 +31,18 @@ namespace DrPairProgrammingMemoryDatabase
             services.AddDbContext<RecordDbContext>(opt =>
                opt.UseInMemoryDatabase("RecordDb"));
             services.AddControllers();
+            services.AddCors((options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("*");
+                });
+            }
+
+
+
+            )); 
 
         }
 
