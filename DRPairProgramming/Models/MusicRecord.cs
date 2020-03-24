@@ -12,23 +12,26 @@ namespace DRPairProgramming.Models
         private double _recordDuration;
         private int _yearOfPuplication;
         private Artist _artist;
-        //private enum _genre
-        //{
-        //    jazz,
-        //    rock, 
-        //    pop,
-        //    alternative,
-        //    classic
-        //}
+        public enum _genre
+        {
+            jazz,
+            rock,
+            pop,
+            alternative,
+            classic,
+            HipHop
+
+        }
 
 
 
-        public MusicRecord(string recordTitle, Artist artist, double recordDuration, int yearOfPuplication)
+        public MusicRecord(string recordTitle, Artist artist, double recordDuration, int yearOfPuplication, _genre genre)
         {
             RecordTitle = recordTitle;
             Artist = artist;
             recordDuration = recordDuration;
-
+            YearOfPublication = yearOfPuplication;
+           _genre Genre = genre;
         }
 
         public string RecordTitle
