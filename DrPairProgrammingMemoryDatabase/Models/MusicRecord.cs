@@ -14,33 +14,31 @@ namespace DrPairProgrammingMemoryDatabase.Models
         private Artist _artist;
         private long _id;
 
-        public enum _genre
-        {
-            jazz,
-            rock,
-            pop,
-            alternative,
-            classic,
-            HipHop
+        //private enum _genre
+        //{
+        //    jazz,
+        //    rock,
+        //    pop,
+        //    alternative,
+        //    classic,
+        //    HipHop
+        //}
 
-        }
-
-
-
-        public MusicRecord(long id,string recordTitle, Artist artist, double recordDuration, int yearOfPuplication, _genre genre)
+        public MusicRecord(long id, string recordTitle, Artist artist, double recordDuration, int yearOfPuplication/*, int genre*/)
         {
             Id = id;
             RecordTitle = recordTitle;
             Artist = artist;
-            recordDuration = recordDuration;
+            RecordDuration = recordDuration;
             YearOfPublication = yearOfPuplication;
-           _genre Genre = genre;
+            //Genre = genre;
+            //Genre skal rettes eller fjernes eller gøres til en separat klasse. Hvis vi tænker i tabeller, bør artist have id
         }
 
         public MusicRecord() { }
-       
 
-
+       // public enum Genre { jazz, rock, pop, alternative, classic,HipHop }
+        
         public string RecordTitle
         {
             get { return _recordTitle; }
@@ -60,7 +58,8 @@ namespace DrPairProgrammingMemoryDatabase.Models
         {
             get { return _artist; }
             set
-            {   if (value == null)
+            {
+                if (value == null)
                 {
                     string e = "Artist must exist with a name, a country and a recordlabel";
                     throw new ArgumentNullException(e);
