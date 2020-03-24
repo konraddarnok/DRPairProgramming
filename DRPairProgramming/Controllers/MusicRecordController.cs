@@ -14,7 +14,15 @@ namespace DRPairProgramming.Controllers
     [ApiController]
     public class MusicRecordController : ControllerBase
     {
-        public List<MusicRecord> MusicRecordsList = new List<MusicRecord>();
+        public List<MusicRecord> MusicRecordsList = new List<MusicRecord>()
+        {
+            new MusicRecord ("titel1", new Artist("artistname1", "recordLavel1", "country1"), 22.22, 22, MusicRecord._genre.alternative),
+            new MusicRecord ("titel2", new Artist("artistname2", "recordLavel2", "country2"), 33.33, 33, MusicRecord._genre.classic),
+             new MusicRecord ("titel3", new Artist("artistname3", "recordLavel3", "country3"), 44.44, 44, MusicRecord._genre.HipHop)
+        };
+
+        
+
         // GET: api/MusicRecord
         [HttpGet]
         public IEnumerable<MusicRecord> Get()
