@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRPairProgramming", "DRPairProgramming\DRPairProgramming.csproj", "{59805587-01FE-419B-A7F2-CDCB283EC59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRPairProgrammingTests", "DRPairProgrammingTests\DRPairProgrammingTests.csproj", "{FF505850-1F21-4E51-BE74-AD637CDC59BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRPairProgrammingTests", "DRPairProgrammingTests\DRPairProgrammingTests.csproj", "{FF505850-1F21-4E51-BE74-AD637CDC59BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrPairProgrammingMemoryDatabase", "DrPairProgrammingMemoryDatabase\DrPairProgrammingMemoryDatabase.csproj", "{5AB65882-054E-45E0-BF60-73B37796961F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FF505850-1F21-4E51-BE74-AD637CDC59BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF505850-1F21-4E51-BE74-AD637CDC59BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF505850-1F21-4E51-BE74-AD637CDC59BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB65882-054E-45E0-BF60-73B37796961F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB65882-054E-45E0-BF60-73B37796961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB65882-054E-45E0-BF60-73B37796961F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB65882-054E-45E0-BF60-73B37796961F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

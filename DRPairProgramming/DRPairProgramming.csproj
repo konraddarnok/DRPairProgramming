@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="WebPanel\**" />
+    <Content Remove="WebPanel\**" />
+    <EmbeddedResource Remove="WebPanel\**" />
+    <None Remove="WebPanel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
