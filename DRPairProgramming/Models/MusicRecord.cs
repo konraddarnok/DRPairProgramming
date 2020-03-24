@@ -34,17 +34,35 @@ namespace DRPairProgramming.Models
            _genre Genre = genre;
         }
 
+        public MusicRecord() { }
+
         public string RecordTitle
         {
             get { return _recordTitle; }
-            set { _recordTitle = value; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    string e = "Title must be at least 1 character long";
+                    throw new ArgumentException(e);
+                }
+                _recordTitle = value;
+            }
         }
 
 
         public Artist Artist
         {
             get { return _artist; }
-            set { _artist = value; }
+            set
+            {   if (value == null)
+                {
+                    string e = "Artist must exist with a name, a country and a recordlabel";
+                    throw new ArgumentNullException(e);
+                }
+
+                _artist = value;
+            }
         }
 
         public double RecordDuration
