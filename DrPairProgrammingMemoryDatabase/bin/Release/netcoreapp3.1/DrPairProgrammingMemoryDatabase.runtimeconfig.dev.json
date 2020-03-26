@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Konra\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Konra\\.nuget\\packages"
+    ]
+  }
+}
