@@ -15,9 +15,9 @@ namespace DrPairProgrammingMemoryDatabase.Controllers
     {
         private readonly RecordDbContext _context;
         private readonly List<MusicRecord> DummyData = new List<MusicRecord>{
-                new MusicRecord(1,"titel1", new Artist("artistname1", "recordLavel1", "country1"), 22.22, 22, MusicRecord._genre.alternative),
-                new MusicRecord(2,"titel2", new Artist("artistname2", "recordLavel2", "country2"), 33.33, 33, MusicRecord._genre.classic),
-                new MusicRecord(3,"titel3", new Artist("artistname3", "recordLavel3", "country3"), 44.44, 44, MusicRecord._genre.HipHop)};
+                new MusicRecord(1,"titel1", new Artist("artistname1", "recordLavel1", "country1"), 22.22, 22),
+                new MusicRecord(2,"titel2", new Artist("artistname2", "recordLavel2", "country2"), 33.33, 33),
+                new MusicRecord(3,"titel3", new Artist("artistname3", "recordLavel3", "country3"), 44.44, 44)};
 
 
     public MusicRecordsController(RecordDbContext context)
