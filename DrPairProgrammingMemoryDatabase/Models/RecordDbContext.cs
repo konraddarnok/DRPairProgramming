@@ -16,8 +16,11 @@ namespace DrPairProgrammingMemoryDatabase.Models
              
             }
 
-            public DbSet<MusicRecord> RecordDb { get; set; }
-        
-        }
+   
+        public DbSet<MusicRecord> RecordDb{ get; set; }
+
+
+
+    }
 
 }
