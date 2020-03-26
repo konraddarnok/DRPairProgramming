@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRPairProgramming", "DRPair
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRPairProgrammingTests", "DRPairProgrammingTests\DRPairProgrammingTests.csproj", "{FF505850-1F21-4E51-BE74-AD637CDC59BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrPairProgrammingMemoryDatabase", "DrPairProgrammingMemoryDatabase\DrPairProgrammingMemoryDatabase.csproj", "{5AB65882-054E-45E0-BF60-73B37796961F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrPairProgrammingMemoryDatabase", "DrPairProgrammingMemoryDatabase\DrPairProgrammingMemoryDatabase.csproj", "{5AB65882-054E-45E0-BF60-73B37796961F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DRTypeScript", "DRTypeScript", "{9C49B05A-7E0B-40BE-93B4-2DAE7564F1F7}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		Script.ts = Script.ts
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
