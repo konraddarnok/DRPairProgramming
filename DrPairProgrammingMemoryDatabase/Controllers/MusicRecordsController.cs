@@ -14,10 +14,12 @@ namespace DrPairProgrammingMemoryDatabase.Controllers
     public class MusicRecordsController : ControllerBase
     {
         private RecordDbContext _context;
-   
+
+        private MusicRecord m1 = new MusicRecord(1, "album1", new Artist(1, "Don", "Label1", "denmark"), 22.33, 2010);
 
     public MusicRecordsController(RecordDbContext context)
         {
+            
             _context = context;
          
         }
@@ -26,7 +28,7 @@ namespace DrPairProgrammingMemoryDatabase.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MusicRecord>>> GetRecordDb()
         {
-            
+            PostMusicRecord(m1);
             return await _context.RecordDb.ToListAsync();
         }
 
