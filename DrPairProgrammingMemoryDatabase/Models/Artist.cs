@@ -19,9 +19,12 @@ namespace DrPairProgrammingMemoryDatabase.Models
 
         public Artist(int id, string artistName, string recordLabel, string country)
         {
+            Id = id;
             ArtistName = artistName;
             RecordLabel = recordLabel;
             Country = country;
         }
+
+        public Artist() { }
     }
 }

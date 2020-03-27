@@ -13,25 +13,25 @@ namespace DrPairProgrammingMemoryDatabase.Controllers
     [ApiController]
     public class MusicRecordsController : ControllerBase
     {
-        private readonly RecordDbContext _context;
+        private RecordDbContext _context;
         private readonly List<MusicRecord> DummyData = new List<MusicRecord>{
                 new MusicRecord(1,"titel1", new Artist(1,"artistname1", "recordLavel1", "country1"), 22.22, 22),
                 new MusicRecord(2,"titel2", new Artist(2,"artistname2", "recordLavel2", "country2"), 33.33, 33),
-                new MusicRecord(3,"titel3", new Artist(3, "artistname3", "recordLavel3", "country3"), 44.44, 44)};
+                new MusicRecord(3,"titel3", new Artist(3,"artistname3", "recordLavel3", "country3"), 44.44, 44)};
 
 
     public MusicRecordsController(RecordDbContext context)
         {
             _context = context;
-
+            _context.AddAsync(DummyData[1]);
         }
 
         // GET: api/MusicRecords
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MusicRecord>>> GetRecordDb()
         {
-            return DummyData;
-            //return await _context.RecordDb.ToListAsync();
+            
+            return await _context.RecordDb.ToListAsync();
         }
 
         // GET: api/MusicRecords/5
