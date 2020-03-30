@@ -1,11 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DRPairProgramming.Models;
+using DRPairProgrammingMemoryDatabase.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using DRPairProgramming.Controllers;
+using DRPairProgramming.Models;
+using DRPairProgrammingMemoryDatabase.Controllers;
 
-namespace DRPairProgramming.Models.Tests
+namespace DRPairProgrammingMemoryDatabase.Models.Tests
 {
     [TestClass()]
     public class MusicRecordTests
